@@ -17,7 +17,6 @@ public abstract class Room {
         this.capacity = capacity;
         this.guests = new ArrayList<>();
 
-
     }
 
     public int getCapacity() {
@@ -26,6 +25,19 @@ public abstract class Room {
 
     public void setCapacity(int capacity) {
         this.capacity = capacity;
+    }
+
+    public void addGuest(Guest guest){
+        this.guests.add(guest);
+    }
+
+    public Guest removeGuestFromRoom(){
+        return this.guests.remove(0);
+    }
+
+    public int countGuestsInRoom(){
+        return this.guests.size();
+
     }
 
 }

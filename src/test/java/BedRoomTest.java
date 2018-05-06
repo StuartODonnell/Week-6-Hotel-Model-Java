@@ -51,14 +51,57 @@ public class BedRoomTest {
     public void hasroomNumber(){
         assertEquals(3, bedRoom3.getRoomNumber());
 
-        }
+    }
 
     @Test
     public void setRoomNumber(){
         bedRoom4.setRoomNumber(4);
         assertEquals(4, bedRoom4.getRoomNumber());
 
+    }
+
+    @Test
+    public void hasRoomRate(){
+        assertEquals(60.00, bedRoom2.getRoomRate(),0.1);
 
     }
 
+    @Test
+    public void setRoomRate(){
+        bedRoom2.setRoomRate(100.00);
+        assertEquals(100.00, bedRoom2.getRoomRate(),0.1);
+
+    }
+
+    @Test
+    public void addGuestToRoom(){
+        bedRoom3.addGuest(guest1);
+        bedRoom3.addGuest(guest2);
+
+        assertEquals(2, bedRoom3.countGuestsInRoom());
+    }
+
+    @Test
+    public void removeGuestFromRoom(){
+        bedRoom3.addGuest(guest1);
+        bedRoom3.addGuest(guest2);
+        bedRoom3.addGuest(guest3);
+        bedRoom3.addGuest(guest4);
+
+        bedRoom3.removeGuestFromRoom();
+        assertEquals(3, bedRoom3.countGuestsInRoom());
+
+    }
+
+    @Test
+    public void canGetRoomCapacity(){
+
+        assertEquals(6, bedRoom4.getCapacity());
+    }
+
+    @Test
+    public void canSetRoomCapacity(){
+        bedRoom4.setCapacity(10);
+        assertEquals(10, bedRoom4.getCapacity());
+    }
 }
