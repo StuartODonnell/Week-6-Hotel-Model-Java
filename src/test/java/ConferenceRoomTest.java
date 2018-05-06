@@ -1,8 +1,7 @@
 import guests.Guest;
 import org.junit.Before;
 import org.junit.Test;
-import rooms.BedRoom;
-import rooms.BedroomType;
+
 import rooms.ConferenceRoom;
 
 import static org.junit.Assert.assertEquals;
