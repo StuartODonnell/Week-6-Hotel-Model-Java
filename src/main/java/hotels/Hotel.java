@@ -7,12 +7,12 @@ import rooms.DiningRoom;
 import java.util.ArrayList;
 
 public class Hotel {
-
+    private String name;
     ArrayList<BedRoom> bedrooms;
     ArrayList<ConferenceRoom> conferencerooms;
     ArrayList<DiningRoom> diningrooms;
 
-    public Hotel() {
+    public Hotel(String name) {
         this.bedrooms = new ArrayList<>();
         this.conferencerooms = new ArrayList<>();
         this.diningrooms = new ArrayList<>();
