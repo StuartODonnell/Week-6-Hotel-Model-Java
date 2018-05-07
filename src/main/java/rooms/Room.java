@@ -40,6 +40,9 @@ public abstract class Room {
 
     }
 
+    public ArrayList<Guest> showListOfGuestsInRoom() {
+        return this.guests;
+    }
 }
 
 

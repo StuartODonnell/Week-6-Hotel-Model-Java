@@ -104,4 +104,12 @@ public class BedRoomTest {
         bedRoom4.setCapacity(10);
         assertEquals(10, bedRoom4.getCapacity());
     }
+
+    @Test
+    public void showGuestsInRoom(){
+        bedRoom3.addGuest(guest1);
+        bedRoom3.addGuest(guest2);
+        bedRoom3.addGuest(guest3);
+        assertEquals(("guest1, guest2, guest3"), bedRoom3.showListOfGuestsInRoom());
+    }
 }
