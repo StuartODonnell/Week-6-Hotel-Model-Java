@@ -42,5 +42,31 @@ public class Hotel {
         this.diningrooms = diningrooms;
     }
 
+    public void addBedroomToHotel(BedRoom bedroom){
+     this.bedrooms.add(bedroom);
+    }
+
+    public void addConferenceRoomToHotel(ConferenceRoom conferenceroom){
+        this.conferencerooms.add(conferenceroom);
+    }
+
+    public void addDiningRoomToHotel(DiningRoom diningroom){
+        this.diningrooms.add(diningroom);
+    }
+
+    public int countBedrooms(){
+
+        return this.bedrooms.size();
+    }
+
+    public int countConferenceRooms(){
+
+        return this.conferencerooms.size();
+    }
+
+    public int countDiningRooms(){
+
+        return this.diningrooms.size();
+    }
 
 }
