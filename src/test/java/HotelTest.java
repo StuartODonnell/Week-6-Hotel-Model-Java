@@ -34,7 +34,7 @@ public class HotelTest {
         bedroom4 = new BedRoom(BedroomType.TWIN,4,150.00);
         conferenceroom1 = new ConferenceRoom("The Sir Steve Redgrave Suite", 750.00, 200 );
         conferenceroom2 = new ConferenceRoom("The Brian Potter Suite", 350.00, 100 );
-        diningroom1 = new DiningRoom("Forking Good Food", 250);
+        diningroom1 = new DiningRoom("So Fork, So Good", 250);
         hotel.addBedroomToHotel(bedroom1);
         hotel.addBedroomToHotel(bedroom2);
         hotel.addBedroomToHotel(bedroom3);
